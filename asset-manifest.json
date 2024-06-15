@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/jaiswarrvishal.github.io/weatherYahoo/static/css/main.de7f8a4e.css",
+    "main.js": "/jaiswarrvishal.github.io/weatherYahoo/static/js/main.f1c466e1.js",
+    "static/js/453.98fd8c0a.chunk.js": "/jaiswarrvishal.github.io/weatherYahoo/static/js/453.98fd8c0a.chunk.js",
+    "static/media/image1.jpeg": "/jaiswarrvishal.github.io/weatherYahoo/static/media/image1.6b3ef8727607cb228cc1.jpeg",
+    "index.html": "/jaiswarrvishal.github.io/weatherYahoo/index.html",
+    "main.de7f8a4e.css.map": "/jaiswarrvishal.github.io/weatherYahoo/static/css/main.de7f8a4e.css.map",
+    "main.f1c466e1.js.map": "/jaiswarrvishal.github.io/weatherYahoo/static/js/main.f1c466e1.js.map",
+    "453.98fd8c0a.chunk.js.map": "/jaiswarrvishal.github.io/weatherYahoo/static/js/453.98fd8c0a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de7f8a4e.css",
+    "static/js/main.f1c466e1.js"
+  ]
+}
