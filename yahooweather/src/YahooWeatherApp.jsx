@@ -63,16 +63,27 @@ const YahooWeatherApp = () => {
           <div id ='heroSection'>
             <p id='city'>{weatherData.location.city}</p>
             <p>{weatherData.location.country}</p>
-            {new Date((weatherData.current_observation.pubDate)*1000).toLocaleString().split(",")[0]}
-            (Timezone: {weatherData.location.timezone_id})
+            <strong> {new Date(weatherData.current_observation.pubDate * 1000).toLocaleString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                    hour: 'numeric',
+                    minute: 'numeric',
+                    second: 'numeric',
+                    hour12: true
+                  })}
+                  </strong>
+            {/* {new Date((weatherData.current_observation.pubDate)*1000).toLocaleString()} */}
+             <p>(Timezone: {weatherData.location.timezone_id})</p> 
             {/* <p>Region: {weatherData.location.region}</p> */} 
             <p id='cloudy'>{weatherData.current_observation.condition.text}</p>
+            {/* <p id='temp'>{convertToFahrenheit(weatherData.current_observation.condition.temperature)} °C</p> */}
             <p id='temp'>{weatherData.current_observation.condition.temperature} °F</p> 
             {/* <p>Condition: {weatherData.current_observation.condition.text}</p> */}
             {/* <p>Timezone: {weatherData.location.timezone_id}</p> */}
           </div>
         ) : (
-          <p>Loading...</p> // Display loading text while fetching data
+          <p>Loading...</p> // Loading
         )}
       </div>
     </div>
